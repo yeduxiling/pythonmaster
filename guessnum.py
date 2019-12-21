@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import random, sys
 num = random.randint(1, 100000)
 i = 0
@@ -12,3 +13,19 @@ while True:
     else:
         print(f"恭喜你猜对了！你一共用了{i}次猜对的。")
         sys.exit()
+=======
+import random, sys
+n = random.randint(1, 20)
+print('I am thinking of a number between 1 and 20.')
+i = 0
+while True:
+    i += 1
+    answer = int(input('Take a guess:'))
+    if n > answer:
+        print('Your guess is too low.')
+    elif n < answer:
+        print('Your guess is too high.')
+    else:
+        print(f'Good job! You guessed my number in {i} guesses!')
+        sys.exit()
+>>>>>>> 2d251d275ee676bbde69ff5e9bde072446f784a7
