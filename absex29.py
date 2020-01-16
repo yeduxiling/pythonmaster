@@ -1,8 +1,7 @@
-import random
-r = random.randrange(1, 1000)
-# 引入随机数r,r的范围为1 - 10000
+def eggs(someParameter):
+    someParameter.append('Hello')
 
-if r % 2 == 0:
-    print(r, 'is even.')
-else:
-    print(r, 'is odd.')
+spam = [1, 2, 3]
+
+eggs(spam)
+print(spam)

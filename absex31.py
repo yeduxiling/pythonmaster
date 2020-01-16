@@ -1,14 +1,16 @@
-def is_prime(n):
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    for m in range(2, int(n ** 0.5) + 1):
-        if (n % m) == 0:
-            return False
-    else:
-        return True
+birthdays = {'Alice':'Apr 1', 'Bob':'Dec 12', 'Carol':'Mar 4'}
 
-for i in range(80, 110):
-    if is_prime(i):
-        print(i)
+while True:
+    print('Eneter a name: (blank to quit)')
+    name = input()
+    if name =='':
+        break
+
+    if name in birthdays:
+        print(birthdays[name] + ' is the birthday of ' + name)
+    else:
+        print('I do not have birthday information for ' + name)
+        print('What is their birthday?')
+        bday = input()
+        birthdays[name] = bday
+        print('Birthday database updated')
